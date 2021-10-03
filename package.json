@@ -2,8 +2,10 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,16 +16,19 @@
     "nodejs",
     "node"
   ],
-  "author": "cuong",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cuongtb98/nodejs/issues"
   },
   "homepage": "https://github.com/cuongtb98/nodejs#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.13"
+    "morgan": "^1.10.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13",
+    "sass": "^1.42.1"
   }
 }
